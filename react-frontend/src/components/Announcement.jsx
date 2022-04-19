@@ -14,7 +14,7 @@ const Container = styled.div`
 `
 const Announcement = () => {
   return (
-    <Container>Free black FRIDAY bitches near malang!!</Container>
+    <Container>SLANDA Free BLACK FRIDAY items start this week!!</Container>
   )
 }
 
