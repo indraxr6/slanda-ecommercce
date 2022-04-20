@@ -17,12 +17,30 @@ export const sliderItems = [
           },
           {
                     id: 3,
-                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
+                    img : 'https://cdn.luxe.digital/media/2019/09/12085003/casual-dress-code-men-style-summer-luxe-digital.jpg',
                     title: 'SLANDA QUICK SALE',
                     desc : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea, odio laudantium reiciendis voluptate, soluta cumque ipsum libero quibusdam est culpa perspiciatis odit qui non ex quaerat. Ad, reprehenderit similique',
                     bg : 'f5fafd'
 
           }
-
 ]
+
+export const categories = [
+          {
+                    id: 1,
+                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
+                    title: 'SLANDA SUMMER SALE?',
+          },
+          {
+                    id: 1,
+                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
+                    title: 'SLANDA SUMMER SALE?',
+          },
+          {
+                    id: 1,
+                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
+                    title: 'SLANDA SUMMER SALE?',
+          }
+]
+
 export default sliderItems;
