@@ -1,4 +1,4 @@
-import { Facebook, GitHub, Instagram } from '@material-ui/icons'
+import { Facebook, GitHub, Instagram, MailOutline, Phone, Room } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -12,7 +12,13 @@ const Left = styled.div`
           padding : 20px;
 `
 
-const Logo = styled.h1``
+// const Logo = styled.img`
+//           width : 100px;
+//           display : flex;
+// `
+const Logotext = styled.h1`
+          display : flex;
+`
 const Desc = styled.p`
           margin : 20px 0px;
 `
@@ -35,29 +41,44 @@ const Center = styled.div`
 `
 
 const Title = styled.h3`
+          margin-bottom : 30px;
 
 `
 
 const List = styled.ul`
-          
+          margin : 0:
+          padding : 0;
+          list-style : none;
+          display : flex;
+          flex-wrap : wrap;
 `
 
 const ListItem = styled.li`
-          
+          width : 50%;
+          margin-bottom : 10px;
 `
 
 const Right = styled.div`
           flex : 1;
           padding : 20px;
+          justify-content : flex-end;
 
 `
+const ContactItem = styled.div`
+          display : flex;
+          margin-bottom : 20px;
+          align-items : center;
+
+`
+
 
 
 const Footer = () => {
   return (
     <Container>
           <Left>
-                    <Logo>SLANDA.</Logo>
+                    {/* <Logo src="https://ik.imagekit.io/slanda/Slanda-removebg-preview__cTXvfHzl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650824039455"/> */}
+                    <Logotext>SLANDA.</Logotext>
                     <Desc>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eaque fuga laboriosam quia corporis dolor, magni autem nam ratione debitis quas modi nihil, numquam sint ipsum, atque ut at delectus!</Desc>
                     <SocialContainer>
                               <SocialIcon>
@@ -81,10 +102,17 @@ const Footer = () => {
                               <ListItem>Terms</ListItem>
                               <ListItem>Wishlist</ListItem>
                               <ListItem>Man Fashion</ListItem>
-                              <ListItem></ListItem>
+                              <ListItem>Accessories</ListItem>
+                              <ListItem>About</ListItem>
                     </List>
           </Center>
-          <Right></Right>
+          
+          <Right>
+                    <Title>Contact Us</Title>
+                    <ContactItem><Room style={{marginRight:"10px"}}/>Malang 65154, Indonesia </ContactItem>
+                    <ContactItem><Phone style={{marginRight:"10px"}}/>+62 555 782 422</ContactItem>
+                    <ContactItem><MailOutline style={{marginRight:"10px"}}/> mail@slanda.co</ContactItem>
+          </Right> 
     </Container>
   )
 }

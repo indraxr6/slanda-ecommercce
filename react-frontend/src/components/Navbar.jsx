@@ -38,12 +38,15 @@ const Input = styled.input` border : none;`
 //////////////////////////////////////////////////Left
 
 const Center = styled.div`
+          
           flex : 1;
-          text-align : center;
+          display : flex;
+          align-items : center;
 `
 
-const Logo = styled.h1`
-          font-weight : bold;
+const Logo = styled.img`
+          // font-weight : bold;
+          width : 8%;
 `
 
 const Right = styled.div`
@@ -64,18 +67,15 @@ const Navbar = () => {
     <Container>
           <Wrapper>
                     <Left>
+                        <Logo src="https://ik.imagekit.io/slanda/Slanda-removebg-preview__cTXvfHzl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650824039455"/>
+                    </Left>
+
+                    <Center>
                        <Languange>ID</Languange>
                        <SearchContainer>
                                  <Input/>
                                  <Search style={{color:"gray", fontSize:16}}/>
                        </SearchContainer>
-                    </Left>
-
-                    <Center>
-                      <Logo>
-                            {/* <img src={Slanda} alt=""/> */}
-                            SLANDA.
-                      </Logo>
                     </Center>
 
                     <Right>
