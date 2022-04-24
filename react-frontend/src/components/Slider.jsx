@@ -5,10 +5,11 @@ import sliderItems from '../data'
 
 const Container = styled.div`
           width : 100%;
-          height : 100vh;
+          height : 90vh;
           display : flex;
           overflow : hidden;
           position : relative;
+          
 `
 
 const Arrow = styled.div`
@@ -91,7 +92,7 @@ const Slider = () => {
               </Arrow>
               <Wrapper slideIndex={slideIndex}>
                     {sliderItems.map((item) => (
-              <Slide bg={item.bg}>
+              <Slide bg={item.bg} key={item.id}>
                         <ImgContainer>
                               <Image src={item.img}/>
                         </ImgContainer>

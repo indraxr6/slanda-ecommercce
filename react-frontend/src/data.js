@@ -26,21 +26,58 @@ export const sliderItems = [
 ]
 
 export const categories = [
+          
           {
                     id: 1,
-                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
-                    title: 'SLANDA SUMMER SALE?',
+                    img : 'https://ae01.alicdn.com/kf/HTB1zb7barZnBKNjSZFKq6AGOVXaN/Pria-Kasual-Blazer-2019-Musim-Semi-Jas-Blazer-Single-Button-Slim-Fit-Blazer-untuk-Pria-Jaket.jpg',
+                    title: 'CASUAL BLAZER',
+                    
           },
           {
-                    id: 1,
-                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
-                    title: 'SLANDA SUMMER SALE?',
+                    id: 2,
+                    img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg',
+                    title: 'ANKLE FOR TWO',
           },
           {
-                    id: 1,
-                    img : 'https://www.apetogentleman.com/wp-content/uploads/2019/05/casual-dressing-tips1.jpg',
-                    title: 'SLANDA SUMMER SALE?',
+                    id: 3,
+                    img : 'https://image.made-in-china.com/2f0j00LNDaTbHIuGri/Autumn-New-Fashion-Men-s-Slim-Fit-Men-s-Long-Sleeve-Shirt-Casual-Shirt.jpg',
+                    title: 'FRESH CASUAL CUT',
           }
+]
+
+export const popularProducts = [
+                    {
+                              id: 1,
+                              img : 'https://ae01.alicdn.com/kf/HTB1zb7barZnBKNjSZFKq6AGOVXaN/Pria-Kasual-Blazer-2019-Musim-Semi-Jas-Blazer-Single-Button-Slim-Fit-Blazer-untuk-Pria-Jaket.jpg'
+                    },
+                    {
+                              id: 2,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    },
+                    {
+                              id: 3,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    },
+                    {
+                              id: 4,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    },
+                    {
+                              id: 5,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    },
+                    {
+                              id: 6,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    },
+                    {
+                              id: 7,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    },
+                    {
+                              id: 8,
+                              img : 'https://cdn.kasual.id/uploads/products/1632207757.jpg'
+                    }
 ]
 
 export default sliderItems;
