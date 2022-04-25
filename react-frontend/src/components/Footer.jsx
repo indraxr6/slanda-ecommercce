@@ -94,7 +94,7 @@ const Footer = () => {
           </Left>
 
           <Center>
-                    <Title>Useful Jumper</Title>
+                    <Title>Useful Links</Title>
                     <List>
                               <ListItem>Home</ListItem>
                               <ListItem>Cart</ListItem>

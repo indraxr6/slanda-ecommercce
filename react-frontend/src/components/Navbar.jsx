@@ -6,7 +6,7 @@ import { Badge } from '@material-ui/core';
       
 
 const Container = styled.div`
-          height : 60px;
+          height : 65px;
 `;
 
 const Wrapper = styled.div`
@@ -33,7 +33,11 @@ const SearchContainer = styled.div`
           margin-left : 25px;
           padding : 5px;
 `
-const Input = styled.input` border : none;`
+const Input = styled.input` 
+border : 0; 
+width : 200px;
+padding-left : 40vh;
+`
 
 //////////////////////////////////////////////////Left
 
@@ -45,8 +49,9 @@ const Center = styled.div`
 `
 
 const Logo = styled.img`
-          // font-weight : bold;
+          
           width : 8%;
+          
 `
 
 const Right = styled.div`
@@ -79,6 +84,10 @@ const Navbar = () => {
                     </Center>
 
                     <Right>
+                    <MenuItem>PRODUCTS</MenuItem>
+
+                    <MenuItem>ABOUT</MenuItem>
+
                       <MenuItem>REGISTER</MenuItem>
                       <MenuItem>LOG IN</MenuItem>
 
