@@ -37,10 +37,7 @@ const Button =  styled.button`
   color : gray;
   cursor : pointer;
   font-weight : 800;
-
-
 `
-
 
 const CategoryItem = ({item}) => {
   return (

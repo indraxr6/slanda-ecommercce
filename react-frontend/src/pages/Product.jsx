@@ -30,9 +30,6 @@ const Button = styled.button`padding: 15px; border: 1px solid gray; background-c
   background-color: #f8f4f4;
 }`
 
-
-
-
 const Product = () => {
   return (
     <Container>

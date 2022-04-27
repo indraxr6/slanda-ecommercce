@@ -42,9 +42,6 @@ const Button = styled.button`
           color : white;
 `
 
-
-
-
 const NewsLetter = () => {
   return (
     <Container>

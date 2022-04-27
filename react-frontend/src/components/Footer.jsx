@@ -18,6 +18,8 @@ const Left = styled.div`
 // `
 const Logotext = styled.h1`
           display : flex;
+          font-weight : 600;
+
 `
 const Desc = styled.p`
           margin : 20px 0px;
