@@ -15,23 +15,29 @@ const Wrapper = styled.div`padding: 30px; width: 20%; background-color: white; a
 const Title = styled.h1`font-size: 24px; font-weight: 500;`
 const Form = styled.form`display: flex; flex-wrap: wrap; flex-direction: column; width: 50%;`
 const Input = styled.input`flex: 0; margin: 20px 10px 0px 0px; min-width: 40%px; padding: 10px; `
-
+const Agreement = styled.span`font-size: 14px; margin: 20px 0px;`
 const Button = styled.button`width: 50%; height: 40px; background-color: black; color: white; border: none; border-radius: 2px;`
 
-const Login = () => {
+const Register = () => {
   return (
     <Container>
           <Wrapper>
-                    <Title>LOGIN TO SLANDA ACCOUNT</Title>
+                    <Title>CREATE AN ACCOUNT</Title>
                     <Form>
+                              <Input placeholder="Name"/>
+                              <Input placeholder="Gender"/>
+                              <Input placeholder="Number"/>
+                              <Input placeholder="E-mail"/>
                               <Input placeholder="Username"/>
                               <Input placeholder="Password"/>
-                             
-                              <Button>LOGIN</Button>
+                              <Agreement>
+                                        By creating an account, I consent to the processing of my personal data in accordance with the <b>Privacy Policy.</b>
+                              </Agreement>
+                              <Button>REGISTER</Button>
                     </Form>
           </Wrapper>
     </Container>
   )
 }
 
-export default Login
+export default Register
