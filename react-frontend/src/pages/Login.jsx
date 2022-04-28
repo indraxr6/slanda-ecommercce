@@ -9,25 +9,27 @@ const Container = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
+          background-size: fit;
+          filter: grayscale(80%);
           
 `
 const Wrapper = styled.div`padding: 30px; width: 20%; background-color: white; align-items: center;`
 const Title = styled.h1`font-size: 24px; font-weight: 500;`
-const Form = styled.form`display: flex; flex-wrap: wrap; flex-direction: column; width: 50%;`
-const Input = styled.input`flex: 0; margin: 20px 10px 0px 0px; min-width: 40%px; padding: 10px; `
-
-const Button = styled.button`width: 50%; height: 40px; background-color: black; color: white; border: none; border-radius: 2px;`
+const Form = styled.form`display: flex; flex-wrap: wrap; flex-direction: column; width: 100%;`
+const Input = styled.input`flex: 1; margin: 10px 0px; min-width: 40%px; padding: 10px; `
+const Link = styled.span`font-size: 14px; margin: 20px 0px;`
+const Button = styled.button`width: 40%; height: 40px; background-color: black; color: white; border: none; border-radius: 2px; margin-top: 10px;`
 
 const Login = () => {
   return (
     <Container>
           <Wrapper>
-                    <Title>LOGIN TO SLANDA ACCOUNT</Title>
+                    <Title>SIGN IN TO SLANDA ACCOUNT</Title>
                     <Form>
-                              <Input placeholder="Username"/>
-                              <Input placeholder="Password"/>
-                             
-                              <Button>LOGIN</Button>
+                            <Input placeholder="Username"/>
+                            <Input placeholder="Password"/>
+                            {/* <Link>Don't have an account? <a href="#">CREATE ONE</a></Link> */}
+                            <Button>LOGIN</Button>
                     </Form>
           </Wrapper>
     </Container>

@@ -32,11 +32,13 @@ const SearchContainer = styled.div`
           align-items : center;
           margin-left : 25px;
           padding : 5px;
+          width : 80%;
 `
 const Input = styled.input` 
 border : 0; 
-width : 200px;
-padding-left : 40vh;
+width : 500%;
+text-align : center;
+// padding-left : ;
 `
 
 //////////////////////////////////////////////////Left
