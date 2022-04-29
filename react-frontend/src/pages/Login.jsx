@@ -28,7 +28,7 @@ const Login = () => {
                     <Form>
                             <Input placeholder="Username"/>
                             <Input placeholder="Password"/>
-                            {/* <Link>Don't have an account? <a href="#">CREATE ONE</a></Link> */}
+                            <Link>Don't have an account? <a href="https://github.com/indraxr6">CREATE ONE</a></Link>
                             <Button>LOGIN</Button>
                     </Form>
           </Wrapper>

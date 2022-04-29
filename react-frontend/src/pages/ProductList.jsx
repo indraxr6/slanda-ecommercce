@@ -9,9 +9,7 @@ import Footer from '../components/Footer'
 
 const Container = styled.div``
 
-const Title = styled.h1`
-          margin: 20px;
-          text-weight: bold;
+const Title = styled.h1`margin: 20px; text-weight: bold;
           
 `
 const FilterContainer = styled.div`
