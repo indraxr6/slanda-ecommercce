@@ -2,14 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from '@material-ui/core';
+import { mobile } from "../responsive"
 // import Slanda from '../assets/images/slanda.png'
       
 
 const Container = styled.div`
           height : 65px;
-          @media only screen and (max-width: 380px) {
-            display: none;
-          }
+          ${mobile({ height : "50px"})}
 `;
 
 const Wrapper = styled.div`
@@ -17,7 +16,9 @@ const Wrapper = styled.div`
           display : flex;
           justify-content : space-between;
           align-items : center;
-`;
+          ${mobile({ padding : "10px 0px" })}
+ 
+`
 
 const Left = styled.div`
           flex : 1;
