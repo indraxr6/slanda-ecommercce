@@ -1,12 +1,13 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
-
+const bodyParser = require("body-parser");
 const app = express();
 
 const mongooose = require("mongoose");
 const dotenv = require("dotenv");
 
 const userRoute = require("./routes/user");
+const productRoute = require("./routes/product");
 const auth = require("./routes/auth");
 
 dotenv.config();
@@ -19,7 +20,10 @@ mongoose
   });
 
 app.use(express.json());
+app.use(bodyParser.json());
+
 app.use("/api/users", userRoute);
+app.use("/api/product", productRoute);
 app.use("/api/auth", auth);
 
 
