@@ -16,6 +16,17 @@ const verifyToken = (req, res, next) => {
 const verifyTokenAuth = (req, res, next) => {
           verifyToken(req, res, () => {
                     if(req.user.id === req.params.id || req.user.isAdmin) {
+                              return next();
+                              // next()
+                    } else {
+                              res.status(403).json({message: "Not Allowed"});
+                    }
+          })
+}
+
+const verifyTokenAdmin = (req, res, next) => {
+          verifyToken(req, res, () => {
+                    if(req.user.isAdmin) {
                               next()
                     } else {
                               res.status(403).json({message: "Not Allowed"});
@@ -23,4 +34,5 @@ const verifyTokenAuth = (req, res, next) => {
           })
           
 }
-module.exports = {verifyToken, verifyTokenAuth}
+
+module.exports = {verifyToken, verifyTokenAuth, verifyTokenAdmin}

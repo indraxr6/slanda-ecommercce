@@ -1,5 +1,6 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
+
 const app = express();
 
 const mongooose = require("mongoose");
@@ -7,9 +8,6 @@ const dotenv = require("dotenv");
 
 const userRoute = require("./routes/user");
 const auth = require("./routes/auth");
-
-
-const { urlencoded } = require("express");
 
 dotenv.config();
 
