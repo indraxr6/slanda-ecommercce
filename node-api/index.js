@@ -20,7 +20,7 @@ mongoose
   });
 
 app.use(express.json());
-app.use(bodyParser.json());
+
 
 app.use("/api/users", userRoute);
 app.use("/api/product", productRoute);
