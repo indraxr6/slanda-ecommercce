@@ -1,15 +1,15 @@
 const router = require('express').Router();
-const CryptoJS = require('crypto-js');
+
 const { verifyToken, verifyTokenAuth, verifyTokenAdmin } = require('./verifyToken');
 const Product = require('../models/Product');
 
 //Create Product
-router.post('/', verifyTokenAdmin, async (req, res) => {
+router.post('/', verifyTokenAuth, async (req, res) => {
           const newProduct = new Product(req.body);
           try {
                     const savedProduct = await new newProduct.save();
                     res.status(200).json(savedProduct)
-                    res.send(savedProduct)
+                    
           } catch(err) {
                     res.status(500).json(err)
           }
@@ -44,7 +44,7 @@ router.delete('/:id', verifyTokenAdmin, async (req, res) => {
 })
 
 //Get product by id
-router.get('/:id', async (req, res) => {
+router.get('/find/:id', async (req, res) => {
           try {
           const product = await Product.findById(req.params.id);
           res.status(200).json(product)
@@ -55,10 +55,22 @@ router.get('/:id', async (req, res) => {
 
 // GET ALL Product
 router.get('/', async (req, res) => {
-          const query = req.query.new;
+          const queryNew = req.query.new;
+          const queryCategory = req.query.category ;
           try {
-                    const users = query ? await User.find().sort({_id: -1}).limit(1) : await User.find();
-                    res.status(200).json(users);
+                    let products;
+                    if (queryNew) {
+                              products = await Product.find().sort({createdAt: -1}).limit(5)
+                    } else if(queryCategory) {
+                              products = await Product.find({categories: {
+                                        $in: [queryCategory]
+                              }                  
+                    })
+
+                    } else {
+                              products = await Product.find()
+                    }
+                    res.status(200).json(products);
           } catch (err){
                     res.status(500).json(err)
           }

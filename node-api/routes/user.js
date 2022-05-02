@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const CryptoJS = require('crypto-js');
 const { verifyToken, verifyTokenAuth, verifyTokenAdmin } = require('./verifyToken');
-const userController = require('../controllers/user.controller');
 const User = require('../models/User');
 
 //UPDATE 
