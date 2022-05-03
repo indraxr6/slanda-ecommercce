@@ -1,17 +1,29 @@
-import Home from "./pages/Home"
-// import Register from "./pages/Register"
-// import Login from "./pages/Login"
-// import Cart from "./pages/Cart"
+// import Home from "./pages/Home"
+// // import Register from "./pages/Register"
+// // import Login from "./pages/Login"
+// // import Cart from "./pages/Cart"
 
+import React from 'react'
 
-
-function App() {
+const App = () => {
   return (
-    <Home/>
-   
+    <Router>
+      
+    </Router>
   )
 }
+
 export default App
+
+
+
+// function App() {
+//   return (
+//     <Home/>
+   
+//   )
+// }
+// export default App
 
 
 
