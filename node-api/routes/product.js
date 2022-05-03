@@ -3,6 +3,7 @@ const router = require('express').Router();
 const { verifyToken, verifyTokenAuth, verifyTokenAdmin } = require('./verifyToken');
 const Product = require('../models/Product');
 
+
 //Create Product
 router.post('/', verifyTokenAuth, async (req, res) => {
           const newProduct = new Product(req.body);
@@ -13,7 +14,6 @@ router.post('/', verifyTokenAuth, async (req, res) => {
           } catch(err) {
                     res.status(500).json(err)
           }
-
 }),
 
 //Update
