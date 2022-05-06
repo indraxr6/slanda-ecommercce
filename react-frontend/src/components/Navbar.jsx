@@ -8,7 +8,7 @@ import { mobile } from "../responsive"
 
 const Container = styled.div`
           height : 65px;
-          ${mobile({ height : "50px"})}
+          
 `;
 
 const Wrapper = styled.div`
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
           display : flex;
           justify-content : space-between;
           align-items : center;
-          ${mobile({ padding : "10px 0px" })}
+          
  
 `
 
