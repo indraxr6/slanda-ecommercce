@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import Product from "./Product"
 import { popularProducts } from "../data"
+import { useEffect } from "react"
+import React, { useState } from "react"
 
 
 const Container = styled.div`
@@ -9,7 +11,16 @@ const Container = styled.div`
           flex-wrap : wrap; 
 `
 
-const Products = () => {
+const Products = ({cat, filters, sort}) => {
+  
+  const [products, setProducts] = useState([])
+  const [filteredProducts, setFilteredProducts] = useState([])
+
+  useEffect (()=> {
+
+
+  },[cat])
+
   return <Container>
               {popularProducts.map(item=>(
                         <Product item={item} key={item.id}/>
