@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
           width: 100%; 
@@ -17,7 +18,7 @@ const Wrapper = styled.div`padding: 30px; width: 20%; background-color: white; a
 const Title = styled.h1`font-size: 24px; font-weight: 500;`
 const Form = styled.form`display: flex; flex-wrap: wrap; flex-direction: column; width: 100%;`
 const Input = styled.input`flex: 1; margin: 10px 0px; min-width: 40%px; padding: 10px; `
-const Link = styled.span`font-size: 14px; margin: 20px 0px;`
+const Reg = styled.span`font-size: 14px; margin: 20px 0px;`
 const Button = styled.button`width: 40%; height: 40px; background-color: black; color: white; border: none; border-radius: 2px; margin-top: 10px;`
 
 const Login = () => {
@@ -28,8 +29,10 @@ const Login = () => {
                     <Form>
                             <Input placeholder="Username"/>
                             <Input placeholder="Password"/>
-                            <Link>Don't have an account? <a href="https://github.com/indraxr6">CREATE ONE</a></Link>
+                            <Reg>Don't have an account? <Link to="/register">CREATE ONE</Link></Reg>
+                            <Link to="/" >
                             <Button>LOGIN</Button>
+                            </Link>
                     </Form>
           </Wrapper>
     </Container>

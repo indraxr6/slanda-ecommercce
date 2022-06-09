@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import { Add, Remove } from '@material-ui/icons'
+import {useLocation} from "react-router-dom";
+import { publicRequest } from '../requestMethods'
 
 const Container = styled.div``
 const Wrapper = styled.div`padding: 50px; display: flex;`
@@ -31,16 +33,32 @@ const Button = styled.button`padding: 15px; border: 1px solid gray; background-c
 }`
 
 const Product = () => {
+  // const location = useLocation();
+  // const id = location.pathname.split("/")[2]
+  // const [product, setProduct] = useState({})
+  // useEffect(() => {
+  //   const getProduct = async ()=> {
+  //     try {
+  //       const res = await publicRequest.get("/products/find/" + id)
+  //       setProduct(res.data)
+  //     } catch {}
+  //   }
+  //   getProduct()
+  // }, [id])
+
   return (
     <Container>
               <Navbar/>
               <Announcement/>
               <Wrapper>
                 <ImgContainer>
-                  <Image src="https://i.pinimg.com/originals/62/01/94/62019474b8bb027bdf3de26991e4ef5f.jpg"/>
+                  <Image src="https://ik.imagekit.io/slanda/254762598_313236176993118_2258664993415028563_n_KLdmvSHFQ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1650822506759"/>
+                  {/* <Image src={product.img}/> */}
+
                 </ImgContainer>
                 <InfoContainer>
                   <Title>Denim Blacko</Title>
+                  {/* <Title>{product.title}</Title> */}
                   <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</Desc>
                   <Price>$14</Price>
                   <FilterContainer>

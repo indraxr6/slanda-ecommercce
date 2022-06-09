@@ -8,6 +8,7 @@ import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 
 
+
 const Container = styled.div``
 
 const Title = styled.h1`margin: 20px; text-weight: bold;
@@ -35,20 +36,20 @@ const Option = styled.option``
 
 
 const ProductList = () => {
-      const location = useLocation();
-      const cat = location.pathname.split("/")[2]
-      const [filters,setFilters] = useState({})
-      const [sort, setSort] = useState("newest")
+            const location = useLocation();
+            const cat = location.pathname.split("/")[2]
+            const [filters,setFilters] = useState({})
+            const [sort, setSort] = useState("newest")
 
-      const handleFilters = (e) => {
-            const value = e.target.value
-            setFilters ({
-                  ...filters,
-                  [e.target.name]: value
+            const handleFilters = (e) => {
+                  const value = e.target.value
+                  setFilters ({
+                        ...filters,
+                        [e.target.name]: value
 
-            })
-      }
-      
+                  })
+            }
+            
 
   return (
     <Container>

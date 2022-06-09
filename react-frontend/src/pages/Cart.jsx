@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Announcement from '../components/Announcement'
 import { Add, Remove } from '@material-ui/icons'
+import { Link } from "react-router-dom";
 
 const Container = styled.div``
 const Wrapper = styled.div`padding: 20px; `
@@ -55,7 +56,9 @@ const Cart = () => {
           <Wrapper>
                     <Title>YOUR INVENTORY</Title>
                     <Top>
+                    <Link to="/products/:category" style={{ textDecoration: "none", color: "#000" }}>
                     <TopButton>CONTINUE SHOPPING</TopButton>
+                    </Link>
                     <TopTexts>
                               <TopText>Shopping Bag(2)</TopText>
                               <TopText>Your Wishlist(0)</TopText>

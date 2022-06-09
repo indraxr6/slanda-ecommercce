@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from '@material-ui/core';
-import { mobile } from "../responsive"
+import { Link } from "react-router-dom";
+// import { mobile } from "../responsive" 
 // import Slanda from '../assets/images/slanda.png'
       
 
@@ -78,8 +79,11 @@ const Navbar = () => {
     <Container>
           <Wrapper>
                     <Left>
+                    <Link to="/" style={{ width: "100%" }}>
                         <Logo src="https://ik.imagekit.io/slanda/Slanda-removebg-preview__cTXvfHzl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650824039455"/>
+                    </Link>
                     </Left>
+
 
                     <Center>
                        <Languange>ID</Languange>
@@ -90,16 +94,25 @@ const Navbar = () => {
                     </Center>
 
                     <Right>
+                    <Link to="/products/:category" style={{ textDecoration: "none", color: "#000" }}>
                     <MenuItem>PRODUCTS</MenuItem>
+                    </Link>
 
                     <MenuItem>ABOUT</MenuItem>
 
+                    <Link to="/register" style={{ textDecoration: "none", color: "#000" }}>
                       <MenuItem>REGISTER</MenuItem>
+                    </Link>
+
+                    <Link to="/login" style={{ textDecoration: "none", color: "#000" }}>
                       <MenuItem>LOG IN</MenuItem>
+                    </Link>
 
                       <MenuItem>
                       <Badge badgeContent={4} color="primary">
+                      <Link to="/cart" style={{ textDecoration: "none", color: "#000" }}>
                         <ShoppingCartOutlined />
+                      </Link>
                       </Badge>
                       </MenuItem>
                     </Right>
